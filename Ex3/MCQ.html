@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+let isDisabled = false
+
+$(document).ready(function(){
+  $("#ans1").hide();
+  $("#ans2").hide();
+  $("#ans3").hide();
+  $("#ans4").hide();
+
+  $("#1").click(function(){
+    $("#ans1").toggle();
+  });
+  
+  $("#2").click(function(){
+    $("#ans2").toggle();
+  });
+
+  $("#3").click(function(){
+    $("#ans3").toggle();
+  });
+
+  $("#4").click(function(){
+    $("#ans4").toggle();
+  });
+
+
+});
+</script>
+</head>
+<body>
+<center><h2>Question & Answer</h2></center>
+
+<p id = 1>Q1. What is your Name?</p>
+<p id = ans1>Neeraj</p>
+
+<p id = 2>Q2. What is your Surname?</p>
+<p id = ans2>Neeraj</p>
+
+<p id = 3>Q3. What is your Roll No?</p>
+<p id = ans3>Neeraj</p>
+
+<p id = 4>Q4. What is your College Name?</p>
+<p id = ans4>Neeraj</p>
+</body>
+</html>

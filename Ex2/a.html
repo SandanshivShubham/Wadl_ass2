@@ -1,0 +1,40 @@
+<html>
+<body>
+
+
+    <h2>Parsing a JSON Array.</h2>
+
+<button type="button" onclick="button()">Change Content</button>
+
+
+
+<script>
+        function button() {
+        var obj = new XMLHttpRequest();
+        obj.open("GET", "a.json", true);
+        obj.onload = function() {
+        var res = JSON.parse(obj.responseText).college;
+        document.writeln("<table border=1>")
+        document.writeln("<th>Name</th> <th>LastName</th>")
+
+        for(i=0;i<res.length;i++){
+            document.writeln("<tr>")
+            document.writeln("<td>",res[i].Name, "</td>");
+            document.writeln("<td>",res[i].DOB, "</td>");
+            document.writeln("</tr>")
+
+        }
+        document.writeln("</table>")
+    }
+
+     
+    obj.send();
+
+}
+
+
+</script>
+
+</body>
+</html>
+        

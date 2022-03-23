@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("#btn1").click(function(){
+    $("img").show();
+  });
+  
+  $("#btn2").click(function(){
+    $(".dog").show();
+    $(".cat").hide();
+  });
+
+  $("#btn3").click(function(){
+    $(".cat").show();
+    $(".dog").hide();
+  });
+
+});
+</script>
+</head>
+<body>
+
+<center><button id="btn1">Display All</button>&nbsp&nbsp&nbsp&nbsp&nbsp    <button id="btn2">Display Dog</button>&nbsp&nbsp&nbsp&nbsp&nbsp    <button id="btn3">Display Cat</button>&nbsp&nbsp&nbsp&nbsp&nbsp</center>
+
+<br><br>
+<img src="https://i.pinimg.com/474x/9b/0c/64/9b0c6462f00e223a11a464bf74b2f507.jpg" alt="Cat" class="cat" height="300" width="300" padding="50%">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsdGKTBnSA8H1svKNOL0550J66pKaZkMCqxeNmjBzbmCUrNOZdHVMvyEymzDDXa0bF1A&usqp=CAU" alt="Dog" class="dog" height="300" width="300"><br>
+<img src="https://pbs.twimg.com/profile_images/670507828327546880/UXLSSMP__400x400.jpg" alt="Dog" class="dog" height="300" width="300">
+<img src="https://i.pinimg.com/originals/6e/d2/8c/6ed28c44c5fb681406603926a1e8d4a2.jpg" alt="Cat" class="cat" height="300" width="300">
+
+
+</body>
+</html>

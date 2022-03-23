@@ -1,0 +1,8 @@
+{
+"college":[
+    {"Name":"John", "DOB":"Doe"},
+    {"Name":"Anna", "DOB":"Smith"},
+    {"Name":"Peter", "DOB":"Jones"}
+  ]
+
+}

@@ -1,0 +1,4 @@
+Neeraj Bhansali
+33303
+PICT
+AJAX stands for Asynchronous JavaScript And XML.

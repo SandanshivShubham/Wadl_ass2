@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+let isDisabled = false
+
+$(document).ready(function(){
+  $("#ans1").hide();
+  $("#ans2").hide();
+  $("#ans3").hide();
+  $("#ans4").hide();
+
+  $("#minus").hide();
+
+
+  $("#1").click(function(){
+    $("#add").toggle();  
+    $("#minus").toggle();
+
+    $("#ans1").toggle();
+  });
+  
+  $("#2").click(function(){
+    $("#ans2").toggle();
+  });
+
+  $("#3").click(function(){
+    $("#ans3").toggle();
+  });
+
+  $("#4").click(function(){
+    $("#ans4").toggle();
+  });
+
+
+});
+</script>
+<center><h2>Question & Answer</h2></center>
+
+<div style="display:flex; border: 1px solid black;" >
+<p id = 1>Q1. What is your Name?</p>
+<p id = add>+</p>
+<p id = minus>-</p>
+</div>
+<p id = ans1>Ans = Neeraj</p>
+
+<div style="display:flex; border: 1px solid black;" >
+<p id = 2>Q2. What is your Surname?</p>
+</div>
+<p id = ans2>Ans = Bhansali</p>
+
+<div style="display:flex; border: 1px solid black;" >
+<p id = 3>Q3. What is your Roll No?</p>
+</div>
+<p id = ans3>Ans = 33303</p>
+
+<div style="display:flex; border: 1px solid black;" >
+<p id = 4>Q4. What is your College Name?</p>
+</div>
+<p id = ans4>Ans = PICT</p>
+</body>
+</html>
+
+<!-- 55447 feedback -->
